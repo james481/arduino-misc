@@ -10,6 +10,15 @@
 #
 # echo -n 1 > /sys/module/i2c_bcm2708/parameters/combined
 #
+# Hardware Hookup:
+# RPi -------- MMA8452Q
+# 01 3.3V ---- 3.3V
+# 03 SDA1 ---- SDA
+# 05 SCL1 ---- SCL
+# 07 GPIO4 --- INT2
+# 08 GPIO14 -- INT1
+# 09 GND ----- GND
+#
 ############################################################
 
 from smbus import SMBus
